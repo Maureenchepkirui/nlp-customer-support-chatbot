@@ -1,0 +1,54 @@
+{
+  "intents": [
+    {
+      "tag": "greeting",
+      "patterns": [
+        "Hi",
+        "Hello",
+        "Hey",
+        "Good morning",
+        "Good evening"
+      ],
+      "responses": [
+        "Hello! How can I help you today?",
+        "Hi there! What can I assist you with?"
+      ]
+    },
+    {
+      "tag": "password_reset",
+      "patterns": [
+        "I forgot my password",
+        "Reset my password",
+        "I can't log in",
+        "Forgot my login details"
+      ],
+      "responses": [
+        "I can help you reset your password. Please provide your email address."
+      ]
+    },
+    {
+      "tag": "order_status",
+      "patterns": [
+        "Where is my order?",
+        "Track my order",
+        "Order status",
+        "Has my order shipped?"
+      ],
+      "responses": [
+        "Sure! Please provide your order number."
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Bye",
+        "Goodbye",
+        "See you later",
+        "Thanks, bye"
+      ],
+      "responses": [
+        "Goodbye! Have a great day 😊"
+      ]
+    }
+  ]
+}
