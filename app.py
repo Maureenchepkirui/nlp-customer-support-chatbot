@@ -1,7 +1,12 @@
-from flask import Flask, request, jsonify
+from flask import Flask, request, jsonify, render_template
 from nlp_model import get_response
 
 app = Flask(__name__)
+
+@app.route("/")
+def index():
+    return render_template("index.html")
+
 
 @app.route("/chat", methods=["POST"])
 def chat():
@@ -19,7 +24,7 @@ def chat():
     })
 
 
-@app.route("/health", methods=["GET"])
+@app.route("/health")
 def health():
     return jsonify({"status": "ok"})
 
